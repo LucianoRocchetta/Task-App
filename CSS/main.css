@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Nunito', 'sans-serif';
+}
+
+#flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
+
+#container{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+    height: 350px;
+    padding: 20px;
+    background-color: teal;
+    border-radius: 4px;
+}
+
+#form p{
+    background-color: rgb(117, 202, 117);
+    border-radius: 4px;
+    margin-bottom: 5px;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+#form h2{
+    color: white;
+    margin: 35px auto;
+}
+
+#form input{
+    display: block;
+    padding: 10px;
+    width: 60%;
+    margin: 10px auto;
+    border: none;
+}
+
+#form button{
+    padding: 10px;
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    background-color: orange;
+    color: white;
+    border: none;
+}
+
+#tasks{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.task{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border-radius: 3px;
+    margin: auto;
+    background-color: rgb(230, 230, 230);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.task .task-head{
+    display: flex;
+    height: 10%;
+    align-items: center;
+}
+
+.task .task-head h2{
+    font-size: 2em;
+    color:rgb(20, 20, 20);
+    margin-right: 10px;
+}
+
+.task .task-head h3{
+    color:rgb(117, 117, 117)04);
+}
+
+.task .task-body p{
+    font-size: 1em;
+    color:rgb(58, 58, 58);
+}
+
+.task .task-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task .task-body #btn-eliminar{
+    background-color: tomato;
+    color: white;
+    width: 100px;
+    height: 30px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.task .task-body #btn-eliminar:hover{
+    cursor: pointer;
+    background-color: rgb(206, 71, 48);
+    transition: 0.5s;
+}
